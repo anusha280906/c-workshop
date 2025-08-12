@@ -1,0 +1,180 @@
+//1.using function
+#include <iostream>
+using namespace std;
+  void sum();
+  void sum()
+  {
+      int a =10,b=20;
+      int sum= a+b;
+      cout<<sum;
+  }
+  int main()
+ {
+      sum();
+ }
+//2.using function
+#include<iostream>
+using namespace std;
+ void area(int,int);
+ void area(int x , int y){
+     int a = x*y;
+     cout<<a;
+ }
+ int main()
+ {
+     area(5,3);
+ }
+//3.with return type and argument
+#include<iostream>
+using namespace std;
+int area(int,int);
+int area(int x, int y) {
+    int a = x*y;
+    return a;
+    
+ }
+ void main()
+ {    
+int r= area(3,5);
+     cout<<r;
+ }
+
+//4.using function
+#include <iostream>
+using namespace std;
+
+int  main()
+ {
+     string txt="we are the so called \"Vikings\" from the north.";
+     cout<<  txt;
+ }
+
+//5.using function
+#include <iostream>
+using namespace std;
+
+int  main()
+ {
+     int myNumbers[5]={10,20,30,40,50};
+     for (int i:myNumbers)
+     {
+     cout<<i<<"\n";
+ }
+ 
+ string word="Hello";
+ for(char c: word)
+ {
+
+     cout<<c <<"\t";
+ }
+ }
+
+//6.using function
+#include <iostream>
+using namespace std;
+
+string vow(); 
+
+string vow()
+{
+    string word = "Hello";
+    string result = "\t";
+
+    for (char c : word)
+        if (!(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+              c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'))
+            result += c;
+
+    return result;
+}
+
+int main()
+{
+    string y = vow();
+    cout << y << "\n";
+}
+
+//7.
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string w1, w2, w3, w4;
+
+  
+    cout << "Enter 4 words separated by space: ";
+    cin >> w1 >> w2 >> w3 >> w4;
+
+    
+    cout << w3 << " " << w4 << " " << w1 << " " << w2 << "\n";
+
+    
+    auto reverse_word = [](string s) {
+        int n = s.length();
+        for (int i = 0; i < n / 2; ++i)
+            swap(s[i], s[n - i - 1]);
+        return s;
+    };
+     cout << reverse_word(w3) << " " << reverse_word(w4) << " "
+         << reverse_word(w1) << " " << reverse_word(w2) << "\n";
+
+    return 0;
+}
+//8.
+#include <iostream>
+using namespace std;
+int main() {
+    
+        for (int i = 0; i < 10; i++)
+    {
+        if(i==4)
+        {
+            continue;
+        }
+        cout << i << "\n";
+    }
+
+    
+   
+}
+//9.
+#include <iostream>
+using namespace std;
+int main() {
+    
+        for (int i = 0; i < 10; i++)
+    {
+        if(i==4)
+        {
+            break;
+        }
+        cout << i << "\n";
+    }
+}
+
+//10.
+#include <iostream>
+using namespace std;
+int main() {
+string cars[5]={ "Audi","Benz","testla","Suzuki","BMW"};
+for(int i=0;i<5;i++)
+       {
+        cout << cars[i] << "\n";
+}
+return 0;
+}
+
+//11.
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+   int myNumbers[5]={10,20,30,40,50};
+   int getArrayLength=sizeof(myNumbers)/sizeof(myNumbers[0]);
+   cout<<getArrayLength;
+   return 0;
+ } 
+
