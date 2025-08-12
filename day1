@@ -1,0 +1,145 @@
+1.#include <iostream>
+using namespace std;
+int main() {
+/* Write C++ code here
+fgjjk*/
+cout << "3+3\n" ;
+cout <<"9";
+return 0;
+
+2.#include <iostream>
+using namespace std;
+int main() {
+int myNum=5;
+double myFloatNum=9.99;
+string myText="Hello";
+bool myBoolean= true;
+cout <<myNum <<endl;
+cout <<myFloatNum <<endl;
+cout <<myText <<endl;
+cout <<myBoolean ;
+return 0;
+}
+
+3.#include <iostream>
+using namespace std;
+int main() {
+int x=5;
+int y =6;
+int sum=x+y;
+cout <<sum <<endl;
+return 0;
+}
+
+4.Usage of variables
+#include <iostream>
+using namespace std;
+int main() {
+int x,y,z;
+x=y=z=50;
+int sum=x+y+z;
+cout <<sum <<endl;
+return 0;
+}
+
+5.Constant:
+#include <iostream>
+using namespace std;
+int main() {
+const int myNum=15;
+int myNum=10;
+cout <<sum <<endl;
+return 0;
+}
+/*It will display error message
+Const cannot be modified*/
+
+6.#include <iostream>
+using namespace std;
+int main() {
+int x,y;
+int sum;
+cout <<"Type a number" <<endl;
+cin>>x;
+cin>>y;
+sum=x+y;
+cout<<"sum is:"<<sum;
+return 0;
+}
+
+7.DATA REPRESENTATION
+#include <iostream>
+using namespace std;
+int main() {
+int fi=35e3;
+double di=12E4;
+cout <<fi <<endl;
+cout<<di;
+return 0;
+}
+/*Y does the float and double doesn’t have decimal points.to
+know about representation and storage. It tells about hardware
+and OS*/
+Output
+35000
+120000
+
+8.#include <iostream>
+using namespace std;
+int main() {
+char myGrade='B';
+cout<< myGrade;
+char a=65;
+char b=66;
+char c=67;
+cout<< a ;
+cout<< b ;
+cout<< c ;
+return 0;
+}
+Output
+BABC
+
+9.#include <iostream>
+using namespace std;
+int main() {
+auto myNum=5;
+auto myFloat=9.9;
+auto myDoubleNum=8.98;
+auto myLetter='D';
+auto myBoolean=true ;
+auto myString=string("HEllo");
+cout<< myNum <<endl;
+cout<< myFloat <<endl;
+cout<<myDoubleNum <<endl;
+cout<< myLetter <<endl ;
+cout<<myBoolean ;
+return 0;
+}
+Output
+5 9.9
+8.98
+D1
+
+10.#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string firstName="jo";
+string lastName="do";
+string fullName= firstName.append(lastName);
+cout<< fullName;
+return 0;
+}
+Output
+Jodo
+
+11.#include <iostream>
+using namespace std;
+int main() {
+string myString="Hello";
+cout<< myString[myString.length()-1];
+return 0;
+}
+Output
+o
